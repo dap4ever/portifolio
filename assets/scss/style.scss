@@ -27,6 +27,8 @@ a {
 body {
     background-color: $azulclaro;
     color: $branco;
+    transition: background 1s;
+    width: 100%;
 
     header {
         border-bottom: 2px solid $branco;
