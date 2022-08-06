@@ -8,7 +8,7 @@ $branco:#fff;
     padding: 0;
     margin: 0%;
     text-decoration: none;
-    box-sizing: content-box;
+    box-sizing: border-box;
     outline: none;
     color: $branco;
 }
@@ -30,8 +30,7 @@ body {
 
     header {
         border-bottom: 2px solid $branco;
-        width: 100%;
-
+        
         nav {
 
             .logo {
@@ -85,7 +84,7 @@ body {
 
 
     .logo {
-        margin-right: 20px;
+    
     }
 
 
