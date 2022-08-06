@@ -29,9 +29,6 @@ body {
         width: 100%;
 
         nav {
-            display: flex;
-            padding: 20px 0;
-
 
             .logo {
 
@@ -71,10 +68,10 @@ body {
         }
     }
 
-    #sobre{
+    #sobre {
         text-align: center;
 
-        h2{
+        h2 {
             margin-top: 25%;
         }
     }
@@ -82,11 +79,11 @@ body {
 
 @media (max-width: 590px) {
 
- 
+
     .logo {
         margin-right: 20px;
     }
 
 
-    
+
 }
