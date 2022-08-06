@@ -32,6 +32,12 @@ body {
             padding: 20px 0;
 
 
+            .navbar-light,
+            .navbar-toggler {
+                color: $branco !important;
+                border-color: $branco !important;
+            }
+
             .logo {
 
                 display: flex;
@@ -53,9 +59,14 @@ body {
                 align-items: center;
                 padding-top: 10px;
 
+                .nav-link {
+                    color: $branco;
+                }
+
                 li {
 
                     margin-left: 30px;
+
 
                     a:hover {
                         text-decoration: none;
