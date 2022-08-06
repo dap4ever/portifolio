@@ -32,11 +32,9 @@ body {
     header {
         border-bottom: 2px solid $branco;
 
-        .nav {
+        .navbar {
           
-            padding: 20px 0;
-
-
+         
             .navbar-light,
             .navbar-toggler {
                 color: $branco !important;
@@ -93,7 +91,7 @@ body {
     }
 }
 
-@media (max-width: 590px) {
+@media (min-width: 590px) {
 
 
     .logo {
@@ -105,20 +103,14 @@ body {
 
 @media (max-width: 590px) {
 
-    .sobre {
-        width: 500px;
-    }
-
+    
 
 
 }
 
 @media (max-width: 980px) {
 
-    #home {
-        display: flex;
-
-    }
+   
 
 
 }
