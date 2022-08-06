@@ -5,7 +5,11 @@ $azul: #00f7ff;
 $branco:#fff;
 
 * {
+    padding: 0;
+    margin: 0%;
+    text-decoration: none;
     box-sizing: content-box;
+    outline: none;
     color: $branco;
 }
 
@@ -22,15 +26,20 @@ a {
 
 body {
     background-color: $azulclaro;
+    transition: background 1s;
     color: $branco;
 
     header {
         border-bottom: 2px solid $branco;
 
-        nav {
-            display: flex;
-            padding: 20px 0;
-
+        .navbar {
+          
+         
+            .navbar-light,
+            .navbar-toggler {
+                color: $branco !important;
+                border-color: $branco !important;
+            }
 
             .logo {
 
@@ -40,6 +49,8 @@ body {
                     width: 100px;
 
                 }
+
+
 
             }
 
@@ -53,9 +64,14 @@ body {
                 align-items: center;
                 padding-top: 10px;
 
+                .nav-link {
+                    color: $branco;
+                }
+
                 li {
 
                     margin-left: 30px;
+
 
                     a:hover {
                         text-decoration: none;
@@ -65,26 +81,23 @@ body {
                 }
             }
 
-
-
         }
     }
 
-    #sobre{
-        text-align: center;
-
-        h2{
-            margin-top: 25%;
+    #home {
+        .sobre {
+            margin-top: 20px;
         }
     }
 }
 
-@media (max-width: 590px) {
+@media (min-width: 590px) {
 
- 
+
     .logo {
         margin-right: 20px;
     }
 
 
 }
+
