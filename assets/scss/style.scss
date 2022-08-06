@@ -47,6 +47,8 @@ body {
 
                 }
 
+
+
             }
 
             .titulo {
@@ -76,8 +78,42 @@ body {
                 }
             }
 
-
-
         }
     }
+
+    #home {
+        .sobre {
+            margin-top: 20px;
+        }
+    }
+}
+
+@media (max-width: 590px) {
+
+ 
+    .logo {
+        margin-right: 20px;
+    }
+
+
+}
+
+@media (max-width: 590px) {
+
+    .sobre {
+        width: 500px;
+    }
+
+   
+
+}
+
+@media (max-width: 980px) {
+
+    #home {
+        display: flex;
+
+    }
+
+
 }
