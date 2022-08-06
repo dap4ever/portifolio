@@ -5,7 +5,11 @@ $azul: #00f7ff;
 $branco:#fff;
 
 * {
+    padding: 0;
+    margin: 0%;
+    text-decoration: none;
     box-sizing: content-box;
+    outline: none;
     color: $branco;
 }
 
