@@ -32,6 +32,16 @@ body {
 
     header {
         border-bottom: 2px solid $branco;
+        
+        .navbar{
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        .navbar-light .navbar-toggler {
+
+            border-color: #fff;
+        }
 
         nav {
 
