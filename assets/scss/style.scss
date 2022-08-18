@@ -17,8 +17,7 @@ $ball: #f2eee3;
     text-decoration: none;
     box-sizing: border-box;
     outline: none;
-    color: $branco;
-
+    
 }
 
 ul {
@@ -117,7 +116,7 @@ body {
                 }
 
                 .nav-link:hover {
-                    color: $cinza;
+                    color: $ball;
                 }
 
 
@@ -127,10 +126,10 @@ body {
                 }
 
                 .toggle-btn {
-                    color: var(--heading-color);
+                    color: $azulclaro;
                     min-width: 40px;
                     height: 40px;
-                    background-color: var(--bg-color2);
+                    background-color: $ball;
                     border-radius: 50%;
                     display: flex;
                     align-items: center;
@@ -146,6 +145,7 @@ body {
                     filter: brightness(97%);
 
                 }
+
 
 
                 li {
@@ -175,13 +175,13 @@ body {
         text-align: center;
         text-transform: uppercase;
         height: 800px;
-        max-height: 800px;
+
 
     }
 }
 
 #sobre {
-    margin-top: 10vh;
+    margin-top: 20vh;
 
 
     .apresentation {
