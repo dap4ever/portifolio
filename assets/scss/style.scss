@@ -8,20 +8,16 @@ $branco:#fff;
 $bg-transparent:#808080;
 $ball: #f2eee3;
 
-// {
-// padding: 0;
-// margin: 0%;
-// text-decoration: none;
-// box-sizing: border-box;
-// outline: none;
-// color: $branco;
 
 *,
 *::before,
 *::after {
     padding: 0;
-    margin: 0;
+    margin: 0%;
+    text-decoration: none;
     box-sizing: border-box;
+    outline: none;
+    color: $branco;
 
 }
 
@@ -32,7 +28,7 @@ ul {
 a {
     text-decoration: none;
     cursor: pointer;
-    
+    color: $preto;
 }
 
 
@@ -121,7 +117,7 @@ body {
                 }
 
                 .nav-link:hover {
-                    color: var(--heading-color);
+                    color: $cinza;
                 }
 
 
@@ -170,40 +166,41 @@ body {
         }
     }
 
-    #sobre {
-        text-align: center;
 
-        h2 {
-            margin-top: 25%;
-        }
+
+    .embreve {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        text-transform: uppercase;
+        height: 800px;
+        max-height: 800px;
+
     }
 }
 
-#home {
-    margin-top: 20vh;
-    max-height: 600px;
-
-    .sobre {
-        margin-top: 40px;
-
-        .apresentation {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
+#sobre {
+    margin-top: 10vh;
 
 
-        }
-
-        .hero-area {
-            text-align: center;
-
-            .hero-img {
-                border-radius: 150px;
-            }
-        }
+    .apresentation {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
 
 
     }
+
+    .hero-area {
+        text-align: center;
+
+        .hero-img {
+            border-radius: 150px;
+        }
+    }
+
+
 
 
 }
@@ -226,7 +223,7 @@ body {
 @media (max-width: 590px) {
 
 
-    #home {
+    #sobre {
         img {
             margin-right: 20px;
 
@@ -237,20 +234,20 @@ body {
 }
 
 @media (max-width: 990px) {
-    #home {
+    #sobre {
         .container {
-            .sobre {
 
-                flex-direction: column-reverse;
-                align-content: center;
 
-                .apresentation {
+            flex-direction: column-reverse;
+            align-content: center;
 
-                    margin-top: -10px;
-                    z-index: 9;
-                }
+            .apresentation {
 
+                margin-top: -10px;
+                z-index: 9;
             }
+
+
         }
 
     }
