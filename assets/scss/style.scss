@@ -32,37 +32,17 @@ ul {
 a {
     text-decoration: none;
     cursor: pointer;
-    color: $branco;
+    
 }
 
 
-// body {
-//     overflow-x: hidden;
-//     background-color: $azulclaro;
-
-//     color: $branco;
-//     transition: background 1s;
-//     width: 100%;
-
-//     header {
-//         border-bottom: 2px solid $branco;
-
-//         .navbar {
-
-//             font-family: 'Poppins', sans-serif;
-
-//         }
-
-
-
-//         header.scrolled {
-//             background-color: $bg-transparent;
-//             box-shadow: 0 5px 20px 0.1px rgba(0, 0, 0, 0.1);
-//         }
-
-
-
 body {
+
+
+    header.scrolled {
+        background-color: $bg-transparent;
+        box-shadow: 0 5px 20px 0.1px rgba(0, 0, 0, 0.1);
+    }
 
     header {
         border-bottom: 2px solid $branco;
@@ -72,6 +52,13 @@ body {
         width: 100%;
         z-index: 10;
         transition: 0.3s;
+        overflow-x: hidden;
+        background-color: $azulclaro;
+
+        color: $branco;
+        transition: background 1s;
+        width: 100%;
+
 
         .navbar {
             padding-left: 0;
@@ -220,6 +207,8 @@ body {
 
 
 }
+
+// Responsividade
 
 @media (max-width: 590px) {
 
