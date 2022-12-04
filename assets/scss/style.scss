@@ -2,10 +2,11 @@
 
 $preto: #000;
 $cinza: #6c757d;
+$cinza-claro: #adb5bd;
 $azulclaro: #ADD8E6;
 $azul: #00f7ff;
 $branco:#fff;
-$bg-transparent:#808080;
+// $bg-transparent:#808080;
 $ball: #f2eee3;
 
 
@@ -30,12 +31,11 @@ a {
     color: $preto;
 }
 
-
 body {
-
+    background-color: $cinza-claro;
 
     header.scrolled {
-        background-color: $bg-transparent;
+        // background-color: $bg-transparent;
         box-shadow: 0 5px 20px 0.1px rgba(0, 0, 0, 0.1);
     }
 
@@ -48,11 +48,10 @@ body {
         z-index: 10;
         transition: 0.3s;
         overflow-x: hidden;
-        background-color: $azulclaro;
+        background-color: $cinza-claro;
         color: $branco;
         transition: background 1s;
         width: 100%;
-
 
         .navbar {
             padding-left: 0;
@@ -84,7 +83,7 @@ body {
                 display: flex;
                 margin-left: auto;
                 align-items: center;
-                padding-top: 10px;
+
 
                 .nav-link {
                     position: relative;
@@ -105,7 +104,6 @@ body {
                     width: 0;
                     height: 10px;
                     border-radius: 5px;
-                    background-color: green;
                     bottom: 0;
                     left: -5px;
                     z-index: -1;
@@ -207,7 +205,6 @@ body {
 
 @media (max-width: 590px) {
 
-
     .logo {
         img {
             margin-right: 20px;
@@ -219,7 +216,6 @@ body {
 }
 
 @media (max-width: 590px) {
-
 
     #sobre {
         img {
@@ -234,7 +230,6 @@ body {
 @media (max-width: 990px) {
     #sobre {
         .container {
-
 
             flex-direction: column-reverse;
             align-content: center;
