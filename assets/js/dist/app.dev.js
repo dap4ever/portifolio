@@ -8,4 +8,10 @@ function stickyNavbar() {
 }
 
 stickyNavbar();
-window.addEventListener("scroll", stickyNavbar);
+window.addEventListener("scroll", stickyNavbar); // slick slider
+
+$('.tec').slick({
+  infinite: true,
+  slidesToShow: 3,
+  slidesToScroll: 3
+});
