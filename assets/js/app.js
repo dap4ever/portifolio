@@ -11,8 +11,9 @@ window.addEventListener("scroll", stickyNavbar);
 
 // slick slider
 
-$('.tec').slick({
-  infinite: true,
+$(".tec").slick({
   slidesToShow: 3,
-  slidesToScroll: 3
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 2000,
 });
