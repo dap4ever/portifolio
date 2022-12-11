@@ -2,11 +2,11 @@
 
 $preto: #000;
 $cinza: #6c757d;
-$cinza-claro: #adb5bd;
+$cinza-claro: #f5f5f5;
 $azulclaro: #ADD8E6;
 $azul: #00f7ff;
 $branco:#fff;
-// $bg-transparent:#808080;
+$bg-cinza:rgb(173 181 189 / 85%);
 $ball: #f2eee3;
 
 
@@ -18,8 +18,13 @@ $ball: #f2eee3;
     text-decoration: none;
     box-sizing: border-box;
     outline: none;
-
 }
+
+.slick-prev:before,
+.slick-next:before {
+    color: $preto;
+}
+
 
 ul {
     list-style: none;
@@ -31,11 +36,17 @@ a {
     color: $preto;
 }
 
+a:hover {
+    text-decoration: none;
+    cursor: pointer;
+
+}
+
 body {
     background-color: $cinza-claro;
 
     header.scrolled {
-        // background-color: $bg-transparent;
+        background-color: $bg-cinza;
         box-shadow: 0 5px 20px 0.1px rgba(0, 0, 0, 0.1);
     }
 
@@ -48,7 +59,7 @@ body {
         z-index: 10;
         transition: 0.3s;
         overflow-x: hidden;
-        background-color: $cinza-claro;
+        background-color: $bg-cinza;
         color: $branco;
         transition: background 1s;
         width: 100%;
@@ -125,7 +136,7 @@ body {
                     color: $azulclaro;
                     min-width: 40px;
                     height: 40px;
-                    background-color: $ball;
+                    background-color: $branco;
                     border-radius: 50%;
                     display: flex;
                     align-items: center;
@@ -147,11 +158,6 @@ body {
                 li {
 
                     margin-left: 30px;
-
-                    a:hover {
-                        text-decoration: none;
-                        color: $preto;
-                    }
 
                 }
 
@@ -178,7 +184,8 @@ body {
 }
 
 #sobre {
-    margin-top: 20vh;
+    margin-top: 5.313rem;
+
 
 
     .apresentation {
@@ -196,9 +203,20 @@ body {
             border-radius: 150px;
         }
     }
+}
 
+#tecnologias {
+    .container {
+        h2 {
+            text-align: center;
+            margin-bottom: 100px;
+        }
 
-
+        .img-tec {
+            width: 100px;
+            height: 100px;
+        }
+    }
 
 }
 
@@ -228,15 +246,15 @@ body {
 
 }
 
-@media (max-width: 990px) {
+@media (max-width: 900px) {
     #sobre {
         .container {
-
-            flex-direction: column-reverse;
-            align-content: center;
+            .row {
+                flex-direction: column-reverse;
+                align-content: center;
+            }
 
             .apresentation {
-
                 margin-top: -10px;
                 z-index: 9;
             }

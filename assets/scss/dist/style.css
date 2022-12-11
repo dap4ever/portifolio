@@ -9,6 +9,11 @@
   outline: none;
 }
 
+.slick-prev:before,
+.slick-next:before {
+  color: #000;
+}
+
 ul {
   list-style: none;
 }
@@ -19,10 +24,16 @@ a {
   color: #000;
 }
 
+a:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+
 body {
-  background-color: #adb5bd;
+  background-color: #f5f5f5;
 }
 body header.scrolled {
+  background-color: rgba(173, 181, 189, 0.85);
   box-shadow: 0 5px 20px 0.1px rgba(0, 0, 0, 0.1);
 }
 body header {
@@ -34,7 +45,7 @@ body header {
   z-index: 10;
   transition: 0.3s;
   overflow-x: hidden;
-  background-color: #adb5bd;
+  background-color: rgba(173, 181, 189, 0.85);
   color: #fff;
   transition: background 1s;
   width: 100%;
@@ -94,7 +105,7 @@ body header nav ul .toggle-btn {
   color: #ADD8E6;
   min-width: 40px;
   height: 40px;
-  background-color: #f2eee3;
+  background-color: #fff;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -111,10 +122,6 @@ body header nav ul .toggle-btn:hover {
 body header nav ul li {
   margin-left: 30px;
 }
-body header nav ul li a:hover {
-  text-decoration: none;
-  color: #000;
-}
 body .embreve {
   display: flex;
   flex-direction: column;
@@ -126,7 +133,7 @@ body .embreve {
 }
 
 #sobre {
-  margin-top: 20vh;
+  margin-top: 5.313rem;
 }
 #sobre .apresentation {
   display: flex;
@@ -140,6 +147,15 @@ body .embreve {
   border-radius: 150px;
 }
 
+#tecnologias .container h2 {
+  text-align: center;
+  margin-bottom: 100px;
+}
+#tecnologias .container .img-tec {
+  width: 100px;
+  height: 100px;
+}
+
 @media (max-width: 590px) {
   .logo img {
     margin-right: 20px;
@@ -150,8 +166,8 @@ body .embreve {
     margin-right: 20px;
   }
 }
-@media (max-width: 990px) {
-  #sobre .container {
+@media (max-width: 900px) {
+  #sobre .container .row {
     flex-direction: column-reverse;
     align-content: center;
   }
