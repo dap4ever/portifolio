@@ -34,6 +34,7 @@ a {
     text-decoration: none;
     cursor: pointer;
     color: $preto;
+
 }
 
 a:hover {
@@ -48,7 +49,9 @@ body {
     header.scrolled {
         background-color: $bg-cinza;
         box-shadow: 0 5px 20px 0.1px rgba(0, 0, 0, 0.1);
+
     }
+
 
     header {
         border-bottom: 2px solid $branco;
@@ -169,7 +172,6 @@ body {
     }
 
 
-
     .embreve {
         display: flex;
         flex-direction: column;
@@ -185,7 +187,7 @@ body {
 
 #sobre {
     margin-top: 5.313rem;
-
+    filter: drop-shadow(2px 4px 6px black);
 
 
     .apresentation {
@@ -215,6 +217,9 @@ body {
         .img-tec {
             width: 100px;
             height: 100px;
+            filter: grayscale(1);
+            object-fit: contain;
+            margin: 0 auto;
         }
     }
 
@@ -239,7 +244,7 @@ body {
     #sobre {
         img {
             margin-right: 20px;
-
+            filter: opacity(0.5);
         }
     }
 
@@ -257,6 +262,12 @@ body {
             .apresentation {
                 margin-top: -10px;
                 z-index: 9;
+                margin-top: -71px;
+                text-align: center;
+
+                p {
+                    margin-top: 32px;
+                }
             }
 
 
