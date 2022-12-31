@@ -140,6 +140,7 @@ body .embreve {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  text-align: center;
 }
 #sobre .hero-area {
   text-align: center;
@@ -155,7 +156,6 @@ body .embreve {
 #tecnologias .container .img-tec {
   width: 100px;
   height: 100px;
-  filter: grayscale(1);
   object-fit: contain;
   margin: 0 auto;
 }

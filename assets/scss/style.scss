@@ -194,7 +194,7 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-
+        text-align: center;
 
     }
 
@@ -217,7 +217,7 @@ body {
         .img-tec {
             width: 100px;
             height: 100px;
-            filter: grayscale(1);
+            //filter: grayscale(1);
             object-fit: contain;
             margin: 0 auto;
         }
